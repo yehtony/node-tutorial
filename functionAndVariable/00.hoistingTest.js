@@ -2,12 +2,12 @@ function nonDeclaration() {
     console(a);
 }
 
-function varDeclare() {
+function varDeclareWithoutAssignment() {
     var a;
     console.log(a);
 }
 
-function varDeclareAndAssign() {
+function varDeclareWithAssignment() {
     var a = 1
     console.log(a);
 }
@@ -44,14 +44,8 @@ function letVsVar() {
     console.log(baz);
 }
 
-//letVsVar()
 
-function functionE() {
-    let a = 1;
-    console.log(a);
-}
-
-function functionF() {
+function letDeclareWithoutAssignment() {
     let a;
     console.log(a);
 }
