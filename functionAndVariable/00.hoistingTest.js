@@ -23,9 +23,19 @@ function isAssignmentHoisted() {
     a = 2;
 }
 
-function isVarAndAssignmentHoisted() {
+function isVarWithAssignmentHoisted() {
     console.log(a);
     var a = 2;
+}
+
+function letDeclareWithoutAssignment() {
+    let a;
+    console.log(a);
+}
+
+function isLetHoisted() {
+    console.log(a);
+    let a;
 }
 
 function letVsVar() {
@@ -44,21 +54,20 @@ function letVsVar() {
     console.log(baz);
 }
 
-
-function letDeclareWithoutAssignment() {
-    let a;
-    console.log(a);
+function globalA() {
+    c = 1;
 }
 
-function functionG() {
-    console.log(a);
-    let a;
+function globalB() {
+    console.log(global.c);
 }
 
-function functionH() {
-    console.log(a);
+function globalC() {
+    d = 1;
+    var d = 2;
+    console.log(d)
 }
 
-function functionI() {
-
+function globalD() {
+    console.log(global.d)
 }

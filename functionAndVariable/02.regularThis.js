@@ -11,6 +11,9 @@ myFunction(); // logs global object (window)
 // During a simple invocation the value of this equals to the global object 
 // (or undefined if the function runs in strict mode);
 
+// Simple invocation when callback
+setTimeout(myFunction, 1000)
+
 const myObject = {
     method() {
         console.log(this);
