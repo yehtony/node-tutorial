@@ -8,7 +8,7 @@ const greetExpression = function (who) {
     return `Hello, ${who}!`;
 }
 
-// Arrow function expression
+// Arrow function expression ES6(ES2015)
 const greetArrow = (who) => {
     return `Hello, ${who}!`;
 }
@@ -38,6 +38,7 @@ console.log(greetArrow("Nathan"))
 // In terms of using both the above syntaxes to create components you can use either as long as you use hoisting into account
 // What is hoisting: https://www.w3schools.com/js/js_hoisting.asp
 // Function hoisting: https://www.digitalocean.com/community/tutorials/understanding-hoisting-in-javascript
+// Arrow function: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 hoisted(); // Output: "This function has been hoisted."
 
