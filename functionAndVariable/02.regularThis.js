@@ -14,20 +14,19 @@ myFunction(); // logs global object (window)
 // Simple invocation when callback
 setTimeout(myFunction, 1000)
 
-const myObject = {
-    method() {
-        console.log(this);
-    }
-};
-// Method invocation
-myObject.method(); // logs myObject
-
-
 // Indirect invocation
 const myContext = { value: 'A' };
 
 myFunction.call(myContext);  // logs { value: 'A' }
 myFunction.apply(myContext); // logs { value: 'A' }
+
+// Method invocation
+const myObject = {
+    method() {
+        console.log(this);
+    }
+};
+myObject.method(); // logs myObject
 
 // constructor invocation
 function MyFunction() {
