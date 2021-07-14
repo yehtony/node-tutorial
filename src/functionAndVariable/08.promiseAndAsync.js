@@ -4,7 +4,7 @@
 // but in general, most function that takes function argument are going to be asynchronous
 
 // Asynchronous Programming vs Synchronous Programming
-import * as fetch from 'node-fetch'
+import fetch from 'node-fetch'
 
 let a = 1
 let b = 2
@@ -15,7 +15,7 @@ setTimeout(function () {
 
 a = 10
 
-fetch('/').then(function () {
+fetch('https://github.com/').then(function () {
     console.log("fetch")
 })
 

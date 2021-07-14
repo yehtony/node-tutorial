@@ -19,3 +19,7 @@ console.log(myEmptyFunction2()); // => undefined
 const increment = (num) => num + 1;
 
 console.log(increment(41)); // => 42
+
+const increment2 = (num) => { num + 1 };
+
+console.log(increment2(42))
