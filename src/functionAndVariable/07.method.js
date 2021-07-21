@@ -30,7 +30,6 @@ class Hero2 {
         arrowLogName2()
     }
 }
-/*
 const batman = new Hero('Batman');
 
 console.log(batman.logName())
@@ -50,6 +49,7 @@ setTimeout(batman.arrowLogName, 1000);
 setTimeout(batman.logFunction, 1000);
 // after 1 second logs "Batman"
 
-*/
+/*
 const batman2 = new Hero2('Batman');
 setTimeout(batman2.arrowLogName, 1000);
+*/

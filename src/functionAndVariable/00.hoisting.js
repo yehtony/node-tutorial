@@ -22,6 +22,9 @@
     a = 1
 */
 
+// var => scope: module, function, class
+// let, const => scope: 大括號
+
 /*
     Hoisting: Hoisting is JavaScript's default behavior of moving declarations to the top.
     JavaScript Declarations are Hoisted.

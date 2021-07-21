@@ -2,8 +2,9 @@
     Comparison of 'this' Value between Regular function and Arrow Function
 */
 
-function myFunction() {
+function myFunction(args) {
     console.log(this);
+    console.log(args)
 }
 
 // Simple invocation
@@ -17,8 +18,9 @@ setTimeout(myFunction, 1000)
 // Indirect invocation
 const myContext = { value: 'A' };
 
-myFunction.call(myContext);  // logs { value: 'A' }
-myFunction.apply(myContext); // logs { value: 'A' }
+myFunction.call(myContext, 1, 2, 3);  // logs { value: 'A' }
+myFunction.apply(myContext, [1, 2, 3]); // logs { value: 'A' }
+// key: js call vs apply
 
 // Method invocation
 const myObject = {
@@ -34,3 +36,10 @@ function MyFunction() {
 }
 new MyFunction(); // logs an instance of MyFunction
 
+/*
+class A:
+    def __init__(self):
+        print(self)
+
+A()
+*/

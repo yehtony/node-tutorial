@@ -8,7 +8,7 @@ const greetExpression = function (who) {
     return `Hello, ${who}!`;
 }
 
-// Arrow function expression ES6(ES2015)
+// Arrow function expression ES6(ES2015) EcmaScript
 const greetArrow = (who) => {
     return `Hello, ${who}!`;
 }

@@ -19,6 +19,5 @@ fetch('https://github.com/').then(function () {
     console.log("fetch")
 })
 
-console.log("Synchronous")
 console.log(a)
 console.log(b)
