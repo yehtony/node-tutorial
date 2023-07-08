@@ -18,18 +18,18 @@ class Hero {
     }
 }
 
-class Hero2 {
-    constructor(heroName) {
-        this.heroName = heroName;
-    }
-    arrowLogName = () => {
-        console.log(this.heroName);
-        let arrowLogName2 = () => {
-            console.log(this)
-        }
-        arrowLogName2()
-    }
-}
+// class Hero2 {
+//     constructor(heroName) {
+//         this.heroName = heroName;
+//     }
+//     arrowLogName = () => {
+//         console.log(this.heroName);
+//         let arrowLogName2 = () => {
+//             console.log(this)
+//         }
+//         arrowLogName2()
+//     }
+// }
 const batman = new Hero('Batman');
 
 console.log(batman.logName())
@@ -46,7 +46,7 @@ setTimeout(batman.bindLogName, 1000);
 setTimeout(batman.arrowLogName, 1000);
 // after 1 second logs "Batman"
 
-setTimeout(batman.logFunction, 1000);
+setTimeout(batman.logFunction.bind(batman), 1000);
 // after 1 second logs "Batman"
 
 /*

@@ -5,7 +5,7 @@ class Person {
     }
 
     hello() {
-
+        // console.log("Hello")
     }
 }
 
@@ -21,7 +21,7 @@ let hobbiesContext = []
 
 const nathan = new Person(addressContext, hobbiesContext)
 
-//printPersonStreet(nathan)
+printPersonStreet(nathan)
 
 
 function printPersonStreetWithAndMark(person) {
@@ -44,6 +44,6 @@ function helloTest(person) {
     person.hello?.()
 }
 
-//printHobbies(nathan)
+printHobbies(nathan)
 
 helloTest(nathan)

@@ -35,7 +35,6 @@ function MyFunction() {
     console.log(this);
 }
 new MyFunction(); // logs an instance of MyFunction
-
 /*
 class A:
     def __init__(self):

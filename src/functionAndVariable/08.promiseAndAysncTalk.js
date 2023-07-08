@@ -16,7 +16,7 @@ const doSomethingAsync = (num, t) => {
         setTimeout(() => resolve(`I did something ${num}`), time)
     })
 }
-/*
+
 let something = doSomethingAsync(1)
     .then(success => {
         console.log(success);
@@ -33,7 +33,7 @@ let something = doSomethingAsync(1)
 something.then(success => {
     console.log(success);
 })
-*/
+
 
 /*
     async function(ES2017 Async and Await)
@@ -50,7 +50,7 @@ const normalFunc = () => {
     console.log(c)
 }
 
-//normalFunc()
+// normalFunc()
 
 
 const asyncSequentialFunc = async () => {
@@ -63,7 +63,7 @@ const asyncSequentialFunc = async () => {
     console.log(c)
 }
 
-//await asyncSequentialFunc()
+// asyncSequentialFunc()
 
 const asyncConcurrentFunc = async () => {
     console.log('==CONCURRENT START with await==');
@@ -72,7 +72,7 @@ const asyncConcurrentFunc = async () => {
     console.log(await b)
     console.log(await a)
 }
-//await asyncConcurrentFunc()
+// asyncConcurrentFunc()
 
 function concurrentPromise() {
     console.log('==CONCURRENT START with Promise.all==')
@@ -82,7 +82,7 @@ function concurrentPromise() {
     })
 }
 
-//await concurrentPromise()
+// concurrentPromise()
 
 async function parallel() {
     console.log('==PARALLEL with await Promise.all==')
@@ -94,4 +94,4 @@ async function parallel() {
     ])
 }
 
-//await parallel()
+// parallel()

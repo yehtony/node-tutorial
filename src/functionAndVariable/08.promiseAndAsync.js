@@ -4,7 +4,8 @@
 // but in general, most function that takes function argument are going to be asynchronous
 
 // Asynchronous Programming vs Synchronous Programming
-import fetch from 'node-fetch'
+// import fetch from 'node-fetch'
+const fetch = require('node-fetch');
 
 let a = 1
 let b = 2

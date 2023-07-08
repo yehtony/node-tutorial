@@ -11,4 +11,4 @@ const ArrowCar = (color) => {
     this.color = color;
 };
 
-const redArrowCar = new arrowCar('red'); // TypeError: Car is not a constructor 
+const redArrowCar = new ArrowCar('red'); // TypeError: Car is not a constructor 
