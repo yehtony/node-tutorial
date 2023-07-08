@@ -1,2 +1,4 @@
-console.log(window);
-console.log(global);
+/* global object */
+
+// console.log(window); // browser env
+console.log(global); // node.js env 
