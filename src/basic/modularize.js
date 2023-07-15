@@ -1,2 +1,2 @@
 // module object
-console.log(module)
+console.log(module);
